@@ -1,0 +1,158 @@
+body {
+  background-color: #1d1825;
+  font-family: "Inter", sans-serif;
+}
+
+.task__controller {
+  display: flex;
+  gap: 8px;
+}
+
+img {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+}
+
+.task__list,
+.done__list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.task__list li,
+.done__list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 432px;
+  height: 75px;
+  padding: 22px, 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  background-color: #15101c;
+  color: #9e78cf;
+}
+
+h3 {
+  color: #ffffff;
+}
+
+.task__controller {
+  display: flex;
+  gap: 10px;
+}
+
+.move-btn img,
+.delete-btn img {
+  width: 30px;
+  height: 30px;
+}
+
+#submit {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+#submit img {
+  display: block;
+}
+
+form {
+  display: flex;
+  gap: 11px;
+}
+
+.strike {
+  text-decoration: line-through;
+  color: #78cfb0;
+  cursor: pointer;
+}
+
+li.strike {
+  color: #78cfb0;
+}
+
+input {
+  width: 381px;
+  height: 40px;
+  top: 159px;
+  left: 504px;
+  border-radius: 10px;
+  border: 1px solid #3e1671;
+  color: #777777;
+  background-color: inherit;
+  opacity: 1;
+  transition: border 0.3s;
+  padding-left: 15px;
+}
+
+input:focus {
+  border: 1px solid #3e1671;
+  outline: none;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes scaleOut {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+.fade-out {
+  animation: fadeOut 0.5s forwards;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s forwards;
+}
+
+.scale-in {
+  animation: scaleIn 0.5s forwards;
+}
+
+.scale-out {
+  animation: scaleOut 0.5s forwards;
+}
